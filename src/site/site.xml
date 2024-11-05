@@ -35,7 +35,6 @@
             <item name="Wiki" href="https://wiki.openwms.cloud/projects/tms-routing-service/wiki" />
             <item name="Javadoc" href="https://openwms.github.io/org.openwms.tms.routing.lib/apidocs/index.html" />
             <item name="Database Schema" href="https://openwms.github.io/org.openwms.tms.routing.lib/${project.version}/schemaspy/relationships.html" />
-            <item name="Sonarcloud" href="https://sonarcloud.io/dashboard?id=org.openwms:${project.artifactId}" />
         </menu>
         <menu name="Project" ref="reports" />
     </body>
