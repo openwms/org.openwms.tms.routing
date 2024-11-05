@@ -180,6 +180,7 @@ spring:
     process-definition-location-prefix: classpath:activiti/
     database-schema-update: true
     database-schema: public
+
   jpa:
     generate-ddl: true
     hibernate:
