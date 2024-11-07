@@ -41,7 +41,6 @@ spring:
           initial-interval: 1s
           max-interval: 1s
 
-
 owms:
   driver:
     osip:
@@ -108,9 +107,6 @@ management:
         http:
           server:
             requests: true
-    export:
-      prometheus:
-        enabled: true
     tags:
       application: ${spring.application.name}
     web:
@@ -127,6 +123,10 @@ management:
   otlp:
     tracing:
       endpoint: ${owms.tracing.url}
+  prometheus:
+    metrics:
+      export:
+        enabled: true
 
 flowable:
   app:
@@ -195,7 +195,6 @@ spring:
     process-definition-location-prefix: classpath:activiti/
     database-schema-update: true
     database-schema: public
-
   jpa:
     generate-ddl: true
     hibernate:

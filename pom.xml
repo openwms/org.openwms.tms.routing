@@ -69,7 +69,7 @@
         <activiti-spring-boot-starter.version>8.7.0-alpha.30</activiti-spring-boot-starter.version>
         <ameba-cloud.version>2.0</ameba-cloud.version>
         <asm.version>9.3</asm.version>
-        <camunda.version>7.19.0</camunda.version> <!-- Last support SpringBoot 2.x (2.7.9) -->
+        <camunda.version>7.22.0</camunda.version>
         <checker-qual.version>3.33.0</checker-qual.version>
         <common-service.version>3.0.0-SNAPSHOT</common-service.version>
         <commons-io.version>2.6</commons-io.version>
@@ -80,7 +80,6 @@
         <httpclient.version>4.5.14</httpclient.version>
         <servo-core.version>0.12.21</servo-core.version>
         <spring-cloud-dependencies.version>2023.0.1</spring-cloud-dependencies.version>
-        <routing-runtime.version>1.0.0-SNAPSHOT</routing-runtime.version>
         <routing-service.version>2.0.0-SNAPSHOT</routing-service.version>
         <transportation-service.version>2.0.0-SNAPSHOT</transportation-service.version>
     </properties>
@@ -301,12 +300,6 @@
             </dependency>
             <dependency>
                 <groupId>org.openwms</groupId>
-                <artifactId>org.openwms.tms.routing.runtime</artifactId>
-                <version>${routing-runtime.version}</version>
-                <classifier>all</classifier>
-            </dependency>
-            <dependency>
-                <groupId>org.openwms</groupId>
                 <artifactId>org.openwms.tms.transportation</artifactId>
                 <version>${transportation-service.version}</version>
                 <classifier>client</classifier>
@@ -345,11 +338,6 @@
         </dependency>
         <dependency>
             <groupId>org.openwms</groupId>
-            <artifactId>org.openwms.tms.routing.runtime</artifactId>
-            <classifier>all</classifier>
-        </dependency>
-        <dependency>
-            <groupId>org.openwms</groupId>
             <artifactId>org.openwms.tms.transportation</artifactId>
             <classifier>client</classifier>
         </dependency>
@@ -378,6 +366,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-hateoas</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

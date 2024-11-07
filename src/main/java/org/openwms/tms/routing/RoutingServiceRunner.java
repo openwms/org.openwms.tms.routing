@@ -19,7 +19,7 @@ import io.interface21.cloud.AmebaCloudModule;
 import io.micrometer.core.instrument.MeterRegistry;
 import org.ameba.app.SolutionApp;
 import org.openwms.common.comm.CommPackage;
-import org.openwms.tms.routing.app.RoutingModuleConfiguration;
+import org.openwms.core.process.execution.RuntimeConfiguration;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryCustomizer;
@@ -37,6 +37,7 @@ import org.springframework.retry.annotation.EnableRetry;
                 SolutionApp.class,
                 RoutingModuleConfiguration.class,
                 RuntimeConfiguration.class,
+                RoutingServiceRunner.class,
                 AmebaCloudModule.class,
                 CommPackage.class
         }
