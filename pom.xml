@@ -78,6 +78,7 @@
         <groovy-jsr223.version>3.0.9</groovy-jsr223.version>
         <guava.version>32.0.0-jre</guava.version>
         <httpclient.version>4.5.14</httpclient.version>
+        <scala-library.version>2.13.12</scala-library.version>
         <servo-core.version>0.12.21</servo-core.version>
         <spring-cloud-dependencies.version>2023.0.1</spring-cloud-dependencies.version>
         <routing-service.version>2.0.0-SNAPSHOT</routing-service.version>
@@ -309,6 +310,12 @@
                 <groupId>org.ow2.asm</groupId>
                 <artifactId>asm</artifactId>
                 <version>${asm.version}</version>
+            </dependency>
+            <dependency>
+                <!-- Clash in camunda-engine-* -->
+                <groupId>org.scala-lang</groupId>
+                <artifactId>scala-library</artifactId>
+                <version>${scala-library.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
