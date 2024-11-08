@@ -84,6 +84,9 @@ eureka:
       protocol: ${owms.srv.protocol}
       startup: ${random.int} # SBA
       zone: ${owms.eureka.zone}
+      prometheus.scrape: "true"
+      prometheus.path: "/actuator/prometheus"
+      prometheus.port: ${server.port}
     non-secure-port-enabled: true
     prefer-ip-address: true
     secure-port-enabled: false
