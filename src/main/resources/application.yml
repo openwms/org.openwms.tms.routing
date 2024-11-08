@@ -2,3 +2,8 @@ eureka:
   client:
     healthcheck:
       enabled: true
+
+logging:
+  file:
+    name: BOOT-TMS-Routing.log
+    path: "/tmp/owms"

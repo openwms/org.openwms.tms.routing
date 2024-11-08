@@ -103,6 +103,9 @@ management:
   health:
     rabbit:
       enabled: false
+  info:
+    git:
+      mode: simple
   metrics:
     distribution:
       percentiles-histogram:
@@ -112,17 +115,6 @@ management:
             requests: true
     tags:
       application: ${spring.application.name}
-    web:
-      server:
-        request:
-          autotime:
-        enabled: true
-  info:
-    git:
-      mode: simple
-  tracing:
-    sampling:
-      probability: 1.0
   otlp:
     tracing:
       endpoint: ${owms.tracing.url}
@@ -130,6 +122,9 @@ management:
     metrics:
       export:
         enabled: true
+  tracing:
+    sampling:
+      probability: 1.0
 
 flowable:
   app:
