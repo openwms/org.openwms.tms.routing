@@ -44,9 +44,10 @@
         <flowable.version>6.7.2</flowable.version>
         <groovy-jsr223.version>3.0.9</groovy-jsr223.version>
         <httpclient.version>4.5.14</httpclient.version>
+        <routing-service.version>2.0.0-SNAPSHOT</routing-service.version>
+        <routing.osip.version>1.0.0-SNAPSHOT</routing.osip.version>
         <scala-library.version>2.13.12</scala-library.version>
         <spring-cloud-dependencies.version>2024.0.0</spring-cloud-dependencies.version>
-        <routing-service.version>2.0.0-SNAPSHOT</routing-service.version>
     </properties>
 
     <reporting>
@@ -190,9 +191,8 @@
             </dependency>
             <dependency>
                 <groupId>org.openwms</groupId>
-                <artifactId>org.openwms.tms.routing.lib</artifactId>
+                <artifactId>org.openwms.tms.routing.osip</artifactId>
                 <version>${routing-service.version}</version>
-                <classifier>all</classifier>
             </dependency>
             <dependency>
                 <!-- Clash between activiti-spring-boot-starter and json-path -->
@@ -220,8 +220,7 @@
         <!-- Project Dependencies -->
         <dependency>
             <groupId>org.openwms</groupId>
-            <artifactId>org.openwms.tms.routing.lib</artifactId>
-            <classifier>all</classifier>
+            <artifactId>org.openwms.tms.routing.osip</artifactId>
         </dependency>
 
         <!-- Spring Dependencies -->
