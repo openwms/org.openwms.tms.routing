@@ -23,8 +23,6 @@
     <logger name="org.openwms" level="INFO"/>
     <logger name="org.openwms.common.comm.res.ResSenderApi" level="OFF"/>
 
-    <logger name="CORE_INTEGRATION_MESSAGING" level="INFO"/>
-
     <springProfile name="ELK">
         <appender name="ELK" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
             <destination>elk:5000</destination>
